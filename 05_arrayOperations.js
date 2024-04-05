@@ -25,10 +25,8 @@ console.log(multiplyByTwo(myArray));
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const array2 = ["Coucou", "Ah que coucou"];
-const filterNameStartByA = (array) => {
-  console.log(array.filter(word => word.startsWith('A')));
-}
+const array2 = ["Coucou", "Ah que coucou", "ABC", "Hé"];
+const filterNameStartByA = array => console.log(array.filter(word => word.startsWith('A')));
 filterNameStartByA(array2);
 
 /**
@@ -41,7 +39,8 @@ filterNameStartByA(array2);
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 let array3 = [3, 15, 485, 12, 1];
-const sum = (array) => {}
+const sum = array => array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum(array3));
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
