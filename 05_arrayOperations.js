@@ -10,8 +10,10 @@
  * 
   */
 
-const multiplyByTwo = (array) => {}
+const multiplyByTwo = array => array.map(newArr => newArr * 2);
 
+let myArray = [5, 10, 20];
+console.log(multiplyByTwo(myArray));
 
 /**
  * Utiliser la fonction .filter sur le tableau passé en paramètre
@@ -23,7 +25,11 @@ const multiplyByTwo = (array) => {}
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const filterNameStartByA = (array) => {}
+const array2 = ["Coucou", "Ah que coucou"];
+const filterNameStartByA = (array) => {
+  console.log(array.filter(word => word.startsWith('A')));
+}
+filterNameStartByA(array2);
 
 /**
  * Utiliser la fonction .reduce sur le tableau passé en paramètre
@@ -34,7 +40,7 @@ const filterNameStartByA = (array) => {}
  *   - les mots clées function et return sont interdits
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
-
+let array3 = [3, 15, 485, 12, 1];
 const sum = (array) => {}
 
 /**
