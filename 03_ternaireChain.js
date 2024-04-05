@@ -11,6 +11,8 @@
  */
 
 function ternaryChain(a, b) {
+   return a > b ? "a est supérieur à b" :
+         a < b ? "a est inférieur à b" : "a est égal à b";
 }
 
 module.exports = ternaryChain;
